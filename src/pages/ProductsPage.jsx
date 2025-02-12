@@ -6,6 +6,7 @@ import StatCard from "../components/common/StatCard";
 import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
 import ProductsTable from "../components/products/ProductsTable";
+import SalesTrendChart from "../components/products/SalesTrendChart";
 
 const ProductsPage = () => {
   return (
