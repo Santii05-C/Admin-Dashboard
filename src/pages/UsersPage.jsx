@@ -4,6 +4,16 @@ import { motion } from "framer-motion";
 import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
 import UsersTable from "../components/users/UsersTable";
+import UserGrowthChart from "../components/users/UserGrowthChart";
+import UserActivityHeatmap from "../components/users/UserActivityHeatmap";
+import UserDemographicsChart from "../components/users/UserDemographicsChart";
+
+const userStats = {
+  totalUsers: 152845,
+  newUsersToday: 243,
+  activeUsers: 98520,
+  churnRate: "2.4%",
+};
 
 const UsersPage = () => {
   return (
@@ -45,9 +55,15 @@ const UsersPage = () => {
         </motion.div>
 
         <UsersTable />
+
+        {/* USER CHARTS */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+          <UserGrowthChart />
+          <UserActivityHeatmap />
+          <UserDemographicsChart />
+        </div>
       </main>
     </div>
   );
 };
-
 export default UsersPage;
