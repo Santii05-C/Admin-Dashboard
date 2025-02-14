@@ -4,6 +4,7 @@ import ProductsPage from "./pages/ProductsPage";
 import Sidebar from "./components/common/Sidebar";
 import UsersPage from "./pages/UsersPage";
 import SalesPage from "./pages/SalesPage";
+import OrdersPage from "./pages/OrdersPage";
 
 function App() {
   return (
