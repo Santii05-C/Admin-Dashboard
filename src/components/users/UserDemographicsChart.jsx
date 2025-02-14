@@ -65,4 +65,3 @@ const UserDemographicsChart = () => {
   );
 };
 export default UserDemographicsChart;
-//1:36
